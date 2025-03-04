@@ -1,2 +1,12 @@
-# Ignore environment variables file
+# Environment Variables
 .env
+.env.local
+.env.*
+*.env
+
+# Python virtual environment
+langchain_rag_env/
+venv/
+env/
+.venv/
+.python-version
