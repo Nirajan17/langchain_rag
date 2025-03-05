@@ -12,3 +12,4 @@ env/
 .python-version
 
 notes
+*.pdf
