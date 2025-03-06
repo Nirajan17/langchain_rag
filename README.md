@@ -6,10 +6,11 @@ A Python-based intelligent chatbot that can read and answer questions about PDF 
 
 - 🤖 Powered by Mistral-7B-Instruct-v0.2 model
 - 📄 PDF document processing and analysis
-- 💬 Interactive chat interface (both CLI and GUI)
+- 💬 Interactive chat interface with PDF upload capability
 - 🔍 Context-aware responses
 - 🧠 Conversation memory
 - 🎯 Accurate document retrieval
+- 📁 Support for custom PDF uploads
 
 ## Installation
 
@@ -42,11 +43,17 @@ HUGGINGFACEHUB_API_TOKEN=your_token_here
 ## Usage
 
 ### GUI Version
-To use the graphical interface:
-
+1. Launch the application:
 ```bash
 python gui.py
 ```
+
+2. Using the GUI:
+   - Click the "Upload PDF" button to select your PDF file
+   - Wait for the PDF to be processed
+   - Once loaded, the chat interface will be enabled
+   - Type your questions and press Enter or click Send
+   - View the AI's responses in the chat display
 
 ### CLI Version
 To use the command-line interface:
@@ -58,6 +65,9 @@ python main.py
 ### Adding Your Own PDFs
 1. Place your PDF file in the project root directory
 2. Update the `PDF_FILE_PATH` in `config.py` to match your PDF filename
+
+### Supported File Types
+- PDF documents (.pdf)
 
 ## Project Structure
 
@@ -133,12 +143,15 @@ For support, please open an issue in the GitHub repository or contact the mainta
 
 ## Future Improvements
 
-- [ ] Support for multiple PDF documents
+- [ ] Support for multiple PDF documents simultaneously
+- [ ] PDF preview functionality
+- [ ] Document summary generation
 - [ ] Enhanced error handling
 - [ ] More customization options
 - [ ] Export chat history
 - [ ] Document summarization feature
 - [ ] Multi-language support
+- [ ] Support for other document formats (docx, txt, etc.)
 
 ## Security Notes
 
